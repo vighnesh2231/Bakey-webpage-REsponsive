@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAKERY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .s1 {
+        background-image: url(bakery.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 1px 1px 3px #000;
+      }
+
+      .heading {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .first-h {
+        font-size: 20px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .bold-h {
+        font-size: 60px;
+        font-weight: 600;
+      }
+
+      .head-2 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      .text-containt {
+        margin-top: 10px;
+      }
+
+      .section-3 {
+        background-color: black;
+        color: white;
+        padding: 60px 20px;
+      }
+
+      .head-s3 h3 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .btn {
+        color: white;
+        font-weight: 600;
+        border: solid white 2px;
+        border-radius: 30px;
+        padding: 14px 35px;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: white;
+        color: black;
+       }
+        .head-2 {
+          font-size: 30px;
+        }
+
+        .section-3 img {
+          margin-bottom: 20px;
+        }
+
+        .btn {
+          width: 70%;
+        }
+        /* page4 styling */
+        .section-4{
+          background-color: rgb(241, 241, 241);
+          padding-bottom: 40px;
+        }
+        .section-4 h3{
+          text-align: center;
+          font-size: 60px;
+          font-weight: 600; 
+          padding: 30px;
+        }
+        .card {
+          border-radius: 30px;
+          text-align: center;
+        }
+        .card-img-top{
+          padding: 15px;
+          border-radius: 40px;
+          height: 200px;
+        }
+        /* section 5 styling */
+        .baker-heading {
+          text-align: center;
+          font-weight: 700;
+          font-size: 100px;
+          font-size: 36px;
+          padding-bottom: 50px;
+        }
+
+        .baker,
+        .bread {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        }
+
+        .baker {
+         padding-left: 0;
+         margin-bottom: -70px;
+         height: 600px;
+         width: 500px;
+        }
+
+        .bread {
+          padding: 0;
+          height: 600px;
+          width: 500px;
+        }
+        .s5-c1,
+        .s5-c2 {
+           text-align: center;
+           padding: 10px;
+           background-color: rgb(241, 241, 241);
+        }
+        .information{
+          background-color: white;
+        }
+        .information-text{
+          background-color: white;
+          padding-top: 120px;
+          padding-bottom: 50px;
+        }
+        .info{
+          text-align: start;
+          margin-top: 30px;
+        }
+        .info-head{
+          text-align: center;
+        }
+        .btn-1{
+          color: black;
+        font-weight: 600;
+        border: solid black 2px;
+        border-radius: 30px;
+        padding: 14px 35px;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-1:hover {
+        background-color: black;
+        color: white;
+       }
+       /* section 6 styling */
+       .c-6 {
+  background-image: url('pestri.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 700px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.menu-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.products {
+  background-color: white;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+ .menu-title {
+    font-size: 36px;
+  }
+  .menu-title {
+    font-size: 28px;
+  }
+
+  .products p {
+    font-size: 14px;
+  }
+ /* section 7 styling */
+  .btn-2{
+          color: black;
+        font-weight: 600;
+        border: solid black 2px;
+        margin-top: 20px;
+        margin-left: 40%;
+        padding: 14px 35px;
+        border-radius: 30px;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+       }
+       .btn-2:hover {
+        background-color: black;
+        color: white;
+       }
+       .hh{
+        padding-top: 300px;
+        font-weight: 700;
+       }
+       .c-7{
+        background-image: url(cream\ roll.jpg);
+        height: 700px;
+        background-size: cover;
+       }
+       /* section 8 style */
+       .c-8 {
+        background-image: url('cupcake.jpg');
+        min-height: 600px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        }
+
+      span,a 
+    {
+      font-weight: bold;
+      color: rgb(255, 193, 22);
+    }
+
+    .about-us {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+ 
+    .about-us {
+    padding: 15px;
+    }
+    .c-6 {
+    padding: 20px 10px;
+    }
+    h2 {
+    font-size: 1.5rem;
+    }
+    p, a, b {
+    font-size: 1rem;
+    }
+
+    </style>
+  </head>
+<body>
+    <!-- Section 1 -->
+    <section>
+      <div class="container-fluid s1">
+        <div class="heading">
+          <h6 class="first-h">Family bakery</h6>
+          <h1 class="bold-h">Organic <br />Breads</h1>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section-2">
+      <h3 class="head-2">Delicious Baking</h3>
+      <div class="container s2-c1 mb-5">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img src="img1.png" class="img-fluid" alt="img1" />
+            <div class="text-containt">
+              <h5>Baked Fresh Daily</h5>
+              <p>Our bread is baked fresh daily, contains no preservatives and is very high in quality. It is also especially nice and soft</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="img2.png" class="img-fluid" alt="img2" />
+            <div class="text-containt">
+              <h5>Great Value</h5>
+              <p>With the most competitive prices on the market we are able to deliver great value without compromising on taste</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="img3.png" class="img-fluid" alt="img3" />
+            <div class="text-containt">
+              <h5>Institutions</h5>
+              <p>We serve a wide range of institutions including universities, airlines, hotels and schools. Order daily for tomorrow</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img src="img4.png" class="img-fluid" alt="img4" />
+            <div class="text-containt">
+              <h5>Delivery To Your Door</h5>
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="img5.png" class="img-fluid" alt="img5" />
+            <div class="text-containt">
+              <h5>No Order Too Large</h5>
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="img6.png" class="img-fluid" alt="img6" />
+            <div class="text-containt">
+              <h5>Delicious Baking</h5>
+              <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="bread.avif" class="img-fluid" alt="bread" />
+          </div>
+          <div class="col-md-6">
+            <div class="head-s3">
+              <h3>Fresh breads <br />cakes and pasties</h3>
+              <p>
+                Nibh venenatis cras sed felis eget velit aliquet sagittis id.
+                Tellus pellentesque eu tincidunt tortor aliquam nulla.
+              </p>
+              <button class="btn">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="section-4">
+      <h3>Our ​Breads</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="f1.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f2.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f3.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f4.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f5.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f6.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f7.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="f8.jpg" alt="food">
+              <div class="card-body">
+               <h5 class="card-title">White Bread</h5>
+                <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="#" class="">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 5 strating -->
+  <section class="section-5">
+    <div class="container-fluid c5">
+      <div class="row s5">
+        <div class="col-md-6 s5-c1">
+          <h1 class="baker-heading">Delicious <br>Baking. <br>Exceptional <br>Quality.</h1>
+          <img src="baker.avif" class="baker img-fluid">
+        </div>
+        <div class="col-md-6 s5-c2">
+         <img src="f2.jpg" class="bread img-fluid">
+        </div>
+      </div>
+      <div class="container-fluid information">
+          <div class="information-text">
+              <h1 class="info-head">W​e produce delicious bread, rolls and other products</h1>
+              <div class="container">
+                  <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br>
+                  <button class="btn-1">READ MORE</button>
+              </div>
+           </div>
+      </div>
+    </div>
+    <!-- section 8 strating -->
+<section class="section-6">
+  <div class="container-fluid c-6">
+    <h1 class="text-center py-4 menu-title">Sweets Menu</h1>
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="products">
+            <h3>Cookies</h3>
+            <p>
+              — Biscotti<br>
+              — Chocolate Chip<br>
+              — Oatmeal Pecan<br>
+              — Oat Ginger Bar<br>
+              — Seasonal specials<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="products">
+            <h3>Brownies</h3>
+            <p>
+              — Classic fudge brownie<br>
+              — Walnut brownie<br>
+              — Cheesecake swirl brownie<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="products">
+            <h3>Pastries</h3>
+            <p>
+              — Seasonal galettes<br>
+              — Tartlets<br>
+              — Banana Bread<br>
+              — Bread Pudding<br>
+              — Cranberry Pecan Granola<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-7">
+  <div class="container-fluid c-7">
+    <h1  class="text-center hh">Our freshly baked bread is the hero <br>of our breakfast menu</h1>
+    <button class="btn-2">READ MORE</button>
+  </div>
+</section>
+ <section>
+  <div class="container-fluid c-8">
+    <div class="about-us">
+      <h2><span>Contact Us</span></h2>
+      <p>Monday - Friday 7:00 AM - 6:00 PM | Saturday 7:00 AM - 4:00 PM <br>
+        Closed Sunday to focus on faith and family
+      </p>
+      <p><b>Phone:</b> (678) 580-0734 <br>
+        <b>Email:</b> <a href="mailto:organicbreads@gmail.com">organicbreads@gmail.com</a>
+      </p>
+      <b>Address:</b>
+      <p>Great Harvest Bread Company <br>
+        150 Athens Hwy Suite 700 <br>
+        Loganville, GA 30052
+      </p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
